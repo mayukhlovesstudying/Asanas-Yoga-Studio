@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .logo img{
+          border-radius: 50%;
+      }
+    </style>
+</head>
+<body class="bg-gray-100 font-inter">
+    <header class="bg-white py-6 shadow-md border-b border-gray-200">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./ASANAS/LOTUS.png" alt="Asanas Yoga Studio Logo" class="h-16 rounded-full">
+                <span class="ml-3 text-xl font-semibold text-gray-800">ASANAS</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Home</a></li>
+                    <li><a href="resources.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Resources</a></li>
+                    <li><a href="about.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">About</a></li>
+                    <li><a href="classes.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Classes</a></li>
+                    <li><a href="schedule.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Schedule</a></li>
+                    <li><a href="contact.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-black focus:outline-none focus:shadow-outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="hidden absolute top-20 right-0 bg-white shadow-lg rounded-md py-2 px-4 space-y-3">
+                    <a href="index.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Home</a>
+                    <a href="resources.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Resources</a>
+                    <a href="about.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">About</a>
+                    <a href="classes.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Classes</a>
+                    <a href="schedule.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Schedule</a>
+                    <a href="contact.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-10 px-4">
+        <h1 class="text-3xl font-semibold mb-8 text-gray-900 text-center">Yoga Resources</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border border-gray-200">
+                <h2 class="text-xl font-semibold mb-4 text-gray-900">Mitigating Diabetes Through Yoga and Naturopathy</h2>
+                <p class="text-gray-700 mb-4">In my years of teaching yoga, one truth has stood out above all...</p>
+                <a href="../Blogs/blog1.html" class="text-blue-500 hover:text-blue-700 transition duration-300 font-medium inline-flex items-center">Read More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-1"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04 1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.08-1.08l3.15-2.958H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border border-gray-200">
+                <h2 class="text-xl font-semibold mb-4 text-gray-900">Calming the Storm Within: Managing Anxiety-Induced Hypertension Through Yoga</h2>
+                <p class="text-gray-700 mb-4">If you’ve ever felt your chest tighten with worry or your pulse race...</p>
+                <a href="../Blogs/blog2.html" class="text-blue-500 hover:text-blue-700 transition duration-300 font-medium inline-flex items-center">Read More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-1"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04 1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.08-1.08l3.15-2.958H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border border-gray-200">
+                <h2 class="text-xl font-semibold mb-4 text-gray-900">Building Strength with Grace: Practicing Yoga Safely for Osteoporosis</h2>
+                <p class="text-gray-700 mb-4">Osteoporosis often comes quietly. You may not notice its presence until...</p>
+                <a href="../Blogs/blog3.html" class="text-blue-500 hover:text-blue-700 transition duration-300 font-medium inline-flex items-center">Read More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-1"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04 1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.08-1.08l3.15-2.958H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border border-gray-200">
+                <h2 class="text-xl font-semibold mb-4 text-gray-900">Finding Balance: A Guide to Easing PMS and Honoring Hormonal Health</h2>
+                <p class="text-gray-700 mb-4">As a yoga teacher, I’ve had countless students come to class looking...</p>
+                <a href="../Blogs/blog4.html" class="text-blue-500 hover:text-blue-700 transition duration-300 font-medium inline-flex items-center">Read More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-1"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04 1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.08-1.08l3.15-2.958H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border border-gray-200">
+                <h2 class="text-xl font-semibold mb-4 text-gray-900">Undoing Your Desk Job: Yoga for Office Life</h2>
+                <p class="text-gray-700 mb-4">If you spend hours at a desk every day, you're not alone, and you're not broken...</p>
+                <a href="../Blogs/blog5.html" class="text-blue-500 hover:text-blue-700 transition duration-300 font-medium inline-flex items-center">Read More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-1"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04 1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.08-1.08l3.15-2.958H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg></a>
+            </div>
+        </div>
+        <div class="mt-12 text-center">
+            <p class="text-gray-600 text-lg">Stay tuned for more insightful articles and resources on yoga and wellness. We are constantly updating our blog with new content to support your journey towards a healthier and more balanced life.</p>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-8 mt-20 border-t border-gray-700">
+        <div class="container mx-auto text-center">
+            <div class="social-links flex justify-center space-x-6 mb-6">
+                <a href="https://www.facebook.com/shubhosri.saha.7" class="hover:text-gray-300 transition duration-300 text-lg">Facebook</a>
+                <a href="https://www.instagram.com/shubhosrisaha/" class="hover:text-gray-300 transition duration-300 text-lg">Instagram</a>
+                <a href="./contact.html" class="hover:text-gray-300 transition duration-300 text-lg">WhatsApp</a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Asanas Yoga Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

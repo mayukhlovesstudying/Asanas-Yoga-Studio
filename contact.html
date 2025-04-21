@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Asanas Yoga Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for the Google Maps Embed */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        .logo img{
+            border-radius: 50%;
+        }
+        .contact-flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+        @media (min-width: 768px) {
+            .contact-flex-container {
+                flex-direction: row;
+                gap: 2rem;
+            }
+        }
+
+        .get-in-touch-card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+             display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @media (min-width: 768px) {
+            .get-in-touch-card {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0;
+            }
+        }
+
+        .get-in-touch-content {
+            margin-right: 2rem;
+            flex: 1;
+        }
+
+        .whatsapp-qr {
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-100 font-inter">
+    <header class="bg-white py-6 shadow-md border-b border-gray-200">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./ASANAS/LOTUS.png" alt="Asanas Yoga Studio Logo" class="h-16 rounded-full">
+                <span class="ml-3 text-xl font-semibold text-gray-800">ASANAS</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Home</a></li>
+                    <li><a href="resources.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Resources</a></li>
+                    <li><a href="about.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">About</a></li>
+                    <li><a href="classes.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Classes</a></li>
+                    <li><a href="schedule.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Schedule</a></li>
+                    <li><a href="contact.html" class="text-gray-800 hover:text-black transition duration-300 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-black focus:outline-none focus:shadow-outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="hidden absolute top-20 right-0 bg-white shadow-lg rounded-md py-2 px-4 space-y-3">
+                    <a href="index.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Home</a>
+                    <a href="resources.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Resources</a>
+                    <a href="about.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">About</a>
+                    <a href="classes.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Classes</a>
+                    <a href="schedule.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Schedule</a>
+                    <a href="contact.html" class="block text-gray-800 hover:text-black transition duration-300 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-20">
+        <section class="contact-section text-gray-700">
+            <h2 class="text-3xl font-semibold mb-8 text-gray-900 text-center">Contact Us</h2>
+            <div class="contact-flex-container">
+                <div class="bg-white rounded-lg shadow-md p-6 get-in-touch-card">
+                    <div class = "get-in-touch-content">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Get in Touch</h3>
+                        <p class="mb-4">
+                            We'd love to hear from you! Please feel free to reach out with any questions, feedback, or inquiries about our classes and studio.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-900">Address:</h4>
+                            <p class="text-gray-600">129, Ho-Chi-Minh Sarani, Shreeram Estates, Kolkata 700008 </p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-900">Phone:</h4>
+                            <p class="text-gray-600">+91 95475 19579</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Email:</h4>
+                            <p class="text-gray-600">yogabyasanas@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="whatsapp-qr">
+                        <div class="flex justify-center mb-4">
+                            <img src="whatsapp.jpg" alt="WhatsApp QR Code" class="w-48 h-48 rounded-md">
+                        </div>
+                        <p class="text-center text-gray-600">Scan this QR code to chat with us on WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container mt-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7373.091208231849!2d88.30328178095297!3d22.483703726839465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027b98dac1bb57%3A0x76c11d76e812dfe2!2sAsanas!5e0!3m2!1sen!2sus!4v1745180450063!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-8 mt-20 border-t border-gray-700">
+        <div class="container mx-auto text-center">
+            <div class="social-links flex justify-center space-x-6 mb-6">
+                <a href="https://www.facebook.com/shubhosri.saha.7" class="hover:text-gray-300 transition duration-300 text-lg">Facebook</a>
+                <a href="https://www.instagram.com/shubhosrisaha/" class="hover:text-gray-300 transition duration-300 text-lg">Instagram</a>
+                <a href="./contact.html" class="hover:text-gray-300 transition duration-300 text-lg">WhatsApp</a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Asanas Yoga Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
